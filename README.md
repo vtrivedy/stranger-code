@@ -12,8 +12,7 @@
 
 <p align="center"><strong><em>"Stranger-Code is bitchin." - Eleven probably</em></strong></p>
 
-<p>A Stranger Things themed AI coding TUI powered by [deepagents](https://github.com/langchain-ai/deepagents).</p>
-
+<p>A Stranger Things themed AI coding TUI powered by <a href="https://github.com/langchain-ai/deepagents">deepagents</a>.</p>
 ---
 
 ## Features
