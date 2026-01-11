@@ -1,0 +1,316 @@
+/* ============================================================================
+   STRANGER CODE - Textual CSS Stylesheet
+   ============================================================================
+   The Upside Down of AI coding assistants
+
+   Theme inspired by Stranger Things:
+   - Neon red glows (portals, title)
+   - Void black backgrounds (Upside Down)
+   - Electric blue accents (Eleven's powers)
+   - Retro terminal green (80s aesthetic)
+   - VHS/CRT scanline vibes
+   ============================================================================ */
+
+/* Define layers for z-ordering */
+Screen {
+    layout: vertical;
+    layers: base autocomplete splash;
+    background: #0a0a0a;
+}
+
+/* ============================================================================
+   SPLASH SCREEN OVERLAY
+   ============================================================================ */
+
+#splash-overlay {
+    layer: splash;
+    width: 100%;
+    height: 100%;
+    background: #0a0a0a;
+}
+
+/* ============================================================================
+   MAIN LAYOUT
+   ============================================================================ */
+
+/* Chat area - main scrollable messages area */
+#chat {
+    height: 1fr;
+    padding: 1 2;
+    background: #0a0a0a;
+}
+
+/* Welcome banner */
+#welcome-banner {
+    height: auto;
+    margin-bottom: 1;
+    background: #0a0a0a;
+}
+
+/* Messages area */
+#messages {
+    height: auto;
+}
+
+/* Bottom app container - holds ChatInput OR ApprovalMenu */
+#bottom-app-container {
+    height: auto;
+    dock: bottom;
+    margin-bottom: 3;
+    padding: 0 1;
+    background: #0a0a0a;
+}
+
+/* Input area */
+#input-area {
+    height: auto;
+    min-height: 3;
+    max-height: 12;
+}
+
+/* ============================================================================
+   APPROVAL MENU - Stranger Things themed
+   ============================================================================ */
+
+.approval-menu {
+    height: auto;
+    margin: 1 0;
+    padding: 1 2;
+    background: #1a0a0a;
+    border: solid #e21b1b;
+}
+
+.approval-menu .approval-title {
+    text-style: bold;
+    color: #ff6b35;
+    margin-bottom: 1;
+}
+
+.approval-menu .approval-info {
+    height: auto;
+    color: #6b3a3a;
+    margin-bottom: 1;
+}
+
+.approval-menu .approval-option {
+    height: 1;
+    padding: 0 1;
+    color: #ffffff;
+}
+
+.approval-menu .approval-option-selected {
+    background: #e21b1b;
+    color: #ffffff;
+    text-style: bold;
+}
+
+.approval-menu .approval-help {
+    color: #6b3a3a;
+    text-style: italic;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Separator line between options and tool details */
+.approval-menu .approval-separator {
+    height: 1;
+    color: #e21b1b;
+    margin: 1 0 0 0;
+}
+
+/* Scrollable tool info area in approval menu */
+.approval-menu .tool-info-scroll {
+    height: auto;
+    max-height: 15;
+    overflow-y: auto;
+    margin-top: 0;
+}
+
+/* Options container with background */
+.approval-menu .approval-options-container {
+    height: auto;
+    background: #0d0505;
+    padding: 1;
+    margin-top: 0;
+}
+
+/* ============================================================================
+   STATUS BAR - VHS Style
+   ============================================================================ */
+
+#status-bar {
+    height: 1;
+    dock: bottom;
+    margin-bottom: 1;
+    background: #0a0a0a;
+}
+
+/* ============================================================================
+   TOOL APPROVAL WIDGETS
+   ============================================================================ */
+
+.tool-approval-widget {
+    height: auto;
+    max-height: 20;
+    overflow-y: auto;
+}
+
+.approval-file-path {
+    color: #a65d5d;
+    text-style: bold;
+}
+
+.approval-description {
+    color: #6b3a3a;
+}
+
+/* ============================================================================
+   DIFF STYLING - Upside Down themed
+   ============================================================================ */
+
+.diff-header {
+    height: auto;
+    color: #6b3a3a;
+}
+
+/* Removed lines - portal red glow */
+.diff-removed {
+    height: auto;
+    color: #ff4444;
+    background: #2a0a0a;
+}
+
+/* Added lines - retro terminal green */
+.diff-added {
+    height: auto;
+    color: #00ff41;
+    background: #0a1a0a;
+}
+
+.diff-range {
+    height: auto;
+    color: #3d5afe;
+    text-style: bold;
+}
+
+.diff-context {
+    height: auto;
+    color: #4a4a4a;
+}
+
+/* ============================================================================
+   COMPLETION POPUP
+   ============================================================================ */
+
+#completion-popup {
+    height: auto;
+    max-height: 12;
+    width: 100%;
+    margin-left: 3;
+    margin-top: 0;
+    padding: 0;
+    background: #0d0505;
+    color: #ffffff;
+    border: solid #e21b1b;
+}
+
+/* ============================================================================
+   MESSAGE STYLING
+   ============================================================================ */
+
+/* User messages - clean white on void */
+.user-message {
+    background: #0a0a0a;
+    color: #ffffff;
+    padding: 1;
+    margin: 1 0;
+}
+
+/* Assistant messages - neon red accent */
+.assistant-message {
+    background: #0d0505;
+    color: #ffffff;
+    padding: 1;
+    margin: 1 0;
+    border-left: thick #e21b1b;
+}
+
+/* Tool messages - dusty crimson (on-brand) */
+.tool-message {
+    background: #0d0808;
+    color: #8b4a4a;
+    padding: 1;
+    margin: 1 0;
+    border-left: thick #8b4a4a;
+}
+
+/* Error messages - portal red */
+.error-message {
+    background: #1a0505;
+    color: #ff4444;
+    padding: 1;
+    margin: 1 0;
+    border: solid #ff0000;
+}
+
+/* System messages - Eleven's blue */
+.system-message {
+    background: #05051a;
+    color: #3d5afe;
+    padding: 1;
+    margin: 1 0;
+    border-left: thick #3d5afe;
+}
+
+/* ============================================================================
+   LOADING STATES - Flickering effect
+   ============================================================================ */
+
+.loading-indicator {
+    color: #e21b1b;
+}
+
+.loading-text {
+    color: #6b3a3a;
+    text-style: italic;
+}
+
+/* ============================================================================
+   SPECIAL EFFECTS
+   ============================================================================ */
+
+/* Glow effect for focused elements */
+*:focus {
+    border: solid #e21b1b;
+}
+
+/* Christmas lights colors for special indicators */
+.christmas-red { color: #ff0000; }
+.christmas-green { color: #00ff00; }
+.christmas-blue { color: #0066ff; }
+.christmas-yellow { color: #ffff00; }
+.christmas-orange { color: #ff6600; }
+
+/* Upside Down mode - inverted for errors */
+.upside-down {
+    background: #0a0a0a;
+    color: #ff0000;
+    text-style: reverse;
+}
+
+/* ============================================================================
+   CHRISTMAS LIGHTS - Joyce's Wall
+   ============================================================================ */
+
+#christmas-lights-top {
+    dock: top;
+    height: 1;
+    background: #0a0a0a;
+}
+
+#christmas-lights-bottom {
+    dock: bottom;
+    height: 1;
+    background: #0a0a0a;
+    margin-bottom: 2;
+}
