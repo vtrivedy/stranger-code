@@ -1,14 +1,18 @@
-# Stranger Code
 
-![Python](https://img.shields.io/badge/python-3.10+-red)
-![License](https://img.shields.io/badge/license-MIT-red)
-![Vibe](https://img.shields.io/badge/vibe-Upside%20Down-darkred)
+<div align="center">
+    <img width="883" height="128" alt="Screenshot 2026-01-11 at 1 37 13 AM" src="https://github.com/user-attachments/assets/7b0c78cf-7332-4dc3-88f0-cccfd66cb8e1" />
 
-*"Friends don't lie. Neither does good code."*
+    ![Python](https://img.shields.io/badge/python-3.10+-red)
+    ![License](https://img.shields.io/badge/license-MIT-red)
+    ![Vibe](https://img.shields.io/badge/vibe-Upside%20Down-darkred)
+    <br>
+  </div>
 
-<img width="1048" alt="Stranger Code Screenshot" src="https://github.com/user-attachments/assets/995bcf9f-8087-4314-aef1-e9d006f34478" />
+*"Stranger-Code is bitchin."* - Eleven probably
 
-A **Stranger Things** themed AI coding agent. Fork of [deepagents](https://github.com/langchain-ai/deepagents) with full 80s aesthetic.
+https://github.com/user-attachments/assets/2ed1e621-85d7-417c-b24e-ec0ed83ed735
+
+A **Stranger Things** themed AI coding TUI powered by [deepagents](https://github.com/langchain-ai/deepagents).
 
 ---
 
@@ -27,7 +31,7 @@ A **Stranger Things** themed AI coding agent. Fork of [deepagents](https://githu
 ### 1. Set up your API key
 
 ```bash
-# Pick one (Anthropic recommended)
+# Pick one (Anthropic is default)
 export ANTHROPIC_API_KEY=your_key_here
 export OPENAI_API_KEY=your_key_here
 export GOOGLE_API_KEY=your_key_here
@@ -73,7 +77,7 @@ stranger-code --no-splash
 stranger-code --auto-approve
 
 # With a specific model
-stranger-code --model claude-sonnet-4-20250514
+stranger-code --model gpt-4o
 ```
 
 ---
@@ -116,17 +120,6 @@ Stranger Code is built on [deepagents](https://github.com/langchain-ai/deepagent
 <details>
 <summary><strong>Advanced Configuration</strong></summary>
 
-### Environment Variables
-
-```bash
-# LLM Provider (pick one)
-ANTHROPIC_API_KEY=...    # Claude models
-OPENAI_API_KEY=...       # GPT models
-GOOGLE_API_KEY=...       # Gemini models
-
-# Optional
-TAVILY_API_KEY=...       # Web search capability
-```
 
 ### Agent Memory
 
@@ -145,9 +138,8 @@ There are hidden surprises. Ask the right questions...
 ## Credits
 
 Built on [deepagents](https://github.com/langchain-ai/deepagents) by LangChain.
-
 Stranger Things is a Netflix production. This project is not affiliated with Netflix.
 
 ---
 
-> *"Mornings are for coffee and contemplation."* — Hopper
+> *This repo has escaped Hawkins Lab.*
