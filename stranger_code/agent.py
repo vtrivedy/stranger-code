@@ -8,7 +8,12 @@ from deepagents import create_deep_agent
 from deepagents.backends import CompositeBackend
 from deepagents.backends.filesystem import FilesystemBackend
 from deepagents.backends.sandbox import SandboxBackendProtocol
-from deepagents.middleware import MemoryMiddleware, SkillsMiddleware
+
+# Use deepagents-cli's middleware implementations
+from deepagents_cli.agent_memory import AgentMemoryMiddleware as MemoryMiddleware
+from deepagents_cli.skills import SkillsMiddleware
+from deepagents_cli.shell import ShellMiddleware
+
 from langchain.agents.middleware import (
     InterruptOnConfig,
 )
@@ -23,7 +28,6 @@ from langgraph.runtime import Runtime
 
 from stranger_code.config import COLORS, config, console, get_default_coding_instructions, settings
 from stranger_code.integrations.sandbox_factory import get_default_working_dir
-from stranger_code.shell import ShellMiddleware
 
 
 def list_agents() -> None:
