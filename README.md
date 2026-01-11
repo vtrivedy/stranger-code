@@ -1,14 +1,16 @@
+  <div align="center">
+    <img src="https://github.com/user-attachments/assets/7b0c78cf-7332-4dc3-88f0-cccfd66cb8e1" alt="Stranger Code" width="600" />
 
-<div align="center">
-    <img width="883" height="128" alt="Screenshot 2026-01-11 at 1 37 13 AM" src="https://github.com/user-attachments/assets/7b0c78cf-7332-4dc3-88f0-cccfd66cb8e1" />
+    <br><br>
 
-    ![Python](https://img.shields.io/badge/python-3.10+-red)
-    ![License](https://img.shields.io/badge/license-MIT-red)
-    ![Vibe](https://img.shields.io/badge/vibe-Upside%20Down-darkred)
-    <br>
+    <img src="https://img.shields.io/badge/python-3.10+-red" alt="Python">
+    <img src="https://img.shields.io/badge/license-MIT-red" alt="License">
+    <img src="https://img.shields.io/badge/vibe-Upside%20Down-darkred" alt="Vibe">
+
+    <br><br>
+
+    <em>"Stranger-Code is bitchin." - Eleven probably</em>
   </div>
-
-*"Stranger-Code is bitchin."* - Eleven probably
 
 https://github.com/user-attachments/assets/2ed1e621-85d7-417c-b24e-ec0ed83ed735
 
