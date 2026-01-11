@@ -1,11 +1,20 @@
   <div align="center">
     <img src="https://github.com/user-attachments/assets/7b0c78cf-7332-4dc3-88f0-cccfd66cb8e1" alt="Stranger Code" width="600" />
-  </div>
-      <img src="https://img.shields.io/badge/python-3.10+-red" alt="Python">
+
+    <br><br>
+
+    <img src="https://img.shields.io/badge/python-3.10+-red" alt="Python">
     <img src="https://img.shields.io/badge/license-MIT-red" alt="License">
     <img src="https://img.shields.io/badge/vibe-Upside%20Down-darkred" alt="Vibe">
-**"Stranger-Code is bitchin." - Eleven probably**
-https://github.com/user-attachments/assets/2ed1e621-85d7-417c-b24e-ec0ed83ed735
+
+    <br><br>
+
+    <strong><em>"Stranger-Code is bitchin." - Eleven probably</em></strong>
+
+    <br><br>
+
+    <video src="https://github.com/user-attachments/assets/2ed1e621-85d7-417c-b24e-ec0ed83ed735" width="700" controls></video>
+  </div>
 
 A **Stranger Things** themed AI coding TUI powered by [deepagents](https://github.com/langchain-ai/deepagents).
 
