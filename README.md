@@ -20,7 +20,7 @@
 
 ## Features
 
-- **Joyce's Christmas Lights** - Toggle festive mode with `/christmas`
+- **Joyce's Christmas Lights** - Use `/christmas` to communicate between Hawkins & the Upside Down with lights.
 - **Vecna Mode** - Auto-approve for autonomous coding (dangerous!)
 - **Upside Down Portal** - Animated splash sequence on startup
 - **Mouthbreather Mode** - Manual approval for safety
