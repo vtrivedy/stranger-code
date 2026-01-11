@@ -12,9 +12,9 @@
 
 <p align="center"><strong><em>"Stranger-Code is bitchin." - Eleven probably</em></strong></p>
 
-<p>https://github.com/langchain-ai/deepagents/tree/master/libs/deepagents-cli
-  A Stranger Things themed AI coding TUI powered by <a href="https://github.com/langchain-ai/deepagents">deepagents</a>.
-  This project basically just adds some fun themes & easter eggs to the great <a href="https://github.com/langchain-ai/deepagents/tree/master/libs/deepagents-cli">deepagents-cli</a>.
+<p>
+  A Stranger Things themed AI coding TUI powered by <a href="https://github.com/langchain-ai/deepagents">deepagents</a>.<br>
+  This project basically just adds some fun themes & easter eggs to the great <a href="https://github.com/langchain-ai/deepagents/tree/master/libs/deepagents-cli">deepagents-cli</a>.<br>
   If you want to build something cool like this (or agents generally), check out the deepagents repo!
 </p>
 ---
