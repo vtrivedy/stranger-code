@@ -64,16 +64,16 @@ That's it. The Gate is open.
 
 ```bash
 # Normal (with intro sequence)
-stranger-code
+uv run stranger-code
 
 # Skip the intro
-stranger-code --no-splash
+uv run stranger-code --no-splash
 
 # Vecna Mode (auto-approve everything)
-stranger-code --auto-approve
+uv run stranger-code --auto-approve
 
 # With a specific model
-stranger-code --model gpt-4o
+uv run stranger-code --model gpt-4o
 ```
 
 ---
