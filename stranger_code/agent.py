@@ -8,7 +8,12 @@ from deepagents import create_deep_agent
 from deepagents.backends import CompositeBackend
 from deepagents.backends.filesystem import FilesystemBackend
 from deepagents.backends.sandbox import SandboxBackendProtocol
-from deepagents.middleware import MemoryMiddleware, SkillsMiddleware
+
+# Use deepagents-cli's middleware implementations
+from deepagents_cli.agent_memory import AgentMemoryMiddleware as MemoryMiddleware
+from deepagents_cli.skills import SkillsMiddleware
+from deepagents_cli.shell import ShellMiddleware
+
 from langchain.agents.middleware import (
     InterruptOnConfig,
 )
@@ -23,7 +28,6 @@ from langgraph.runtime import Runtime
 
 from stranger_code.config import COLORS, config, console, get_default_coding_instructions, settings
 from stranger_code.integrations.sandbox_factory import get_default_working_dir
-from stranger_code.shell import ShellMiddleware
 
 
 def list_agents() -> None:
@@ -387,28 +391,20 @@ def create_cli_agent(
 
     # Add memory middleware
     if enable_memory:
-        memory_sources = [str(settings.get_user_agent_md_path(assistant_id))]
-        project_agent_md = settings.get_project_agent_md_path()
-        if project_agent_md:
-            memory_sources.append(str(project_agent_md))
-
         agent_middleware.append(
             MemoryMiddleware(
-                backend=FilesystemBackend(),
-                sources=memory_sources,
+                settings=settings,
+                assistant_id=assistant_id,
             )
         )
 
     # Add skills middleware
     if enable_skills:
-        sources = [str(skills_dir)]
-        if project_skills_dir:
-            sources.append(str(project_skills_dir))
-
         agent_middleware.append(
             SkillsMiddleware(
-                backend=FilesystemBackend(),
-                sources=sources,
+                skills_dir=skills_dir,
+                assistant_id=assistant_id,
+                project_skills_dir=project_skills_dir,
             )
         )
 
