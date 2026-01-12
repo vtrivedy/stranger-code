@@ -445,12 +445,23 @@ class SessionState:
         return self.auto_approve
 
 
-def get_default_coding_instructions() -> str:
+def get_default_coding_instructions(agent_name: str | None = None) -> str:
     """Get the default coding agent instructions.
 
     These are the immutable base instructions that cannot be modified by the agent.
     Long-term memory (AGENTS.md) is handled separately by the middleware.
+
+    Args:
+        agent_name: Optional agent name to check for character-specific prompt.
+                   Supports: barb, eleven, dustin, hopper, vecna
     """
+    # Check for character-specific prompt
+    if agent_name:
+        character_prompt_path = Path(__file__).parent / "prompts" / f"{agent_name.lower()}.md"
+        if character_prompt_path.exists():
+            return character_prompt_path.read_text()
+
+    # Fall back to default prompt
     default_prompt_path = Path(__file__).parent / "default_agent_prompt.md"
     return default_prompt_path.read_text()
 

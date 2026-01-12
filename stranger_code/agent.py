@@ -80,8 +80,8 @@ def reset_agent(agent_name: str, source_agent: str | None = None) -> None:
         source_content = source_md.read_text()
         action_desc = f"contents of agent '{source_agent}'"
     else:
-        source_content = get_default_coding_instructions()
-        action_desc = "default"
+        source_content = get_default_coding_instructions(agent_name)
+        action_desc = f"default ({agent_name})" if agent_name in ("barb", "eleven", "dustin", "hopper", "vecna") else "default"
 
     if agent_dir.exists():
         shutil.rmtree(agent_dir)
@@ -376,7 +376,7 @@ def create_cli_agent(
         agent_dir = settings.ensure_agent_dir(assistant_id)
         agent_md = agent_dir / "AGENTS.md"
         if not agent_md.exists():
-            source_content = get_default_coding_instructions()
+            source_content = get_default_coding_instructions(assistant_id)
             agent_md.write_text(source_content)
 
     # Skills directories (if enabled)

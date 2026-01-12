@@ -74,6 +74,29 @@ uv run stranger-code --auto-approve
 
 # With a specific model
 uv run stranger-code --model gpt-4o
+
+# Use a character personality
+uv run stranger-code --agent barb
+```
+
+---
+
+## Character Agents
+
+Choose your companion from the Stranger Things universe:
+
+| Agent | Personality |
+|-------|-------------|
+| `--agent barb` | Loyal friend who warns you about bad decisions |
+| `--agent eleven` | Few words. Big actions. "Done." |
+| `--agent dustin` | Enthusiastic nerd energy, explains everything with excitement |
+| `--agent hopper` | Gruff, no BS, "mornings are for coffee and contemplation" |
+| `--agent vecna` | Roasts your code with dark elegance |
+
+```bash
+# Examples
+uv run stranger-code --agent eleven    # Minimal responses, maximum power
+uv run stranger-code --agent vecna     # "I have seen your git history... ALL of it."
 ```
 
 ---
