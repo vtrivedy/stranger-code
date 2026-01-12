@@ -666,18 +666,42 @@ wheels = [
 
 [[package]]
 name = "deepagents"
-version = "0.3.5"
+version = "0.2.8"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "langchain" },
     { name = "langchain-anthropic" },
     { name = "langchain-core" },
-    { name = "langchain-google-genai" },
     { name = "wcmatch" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/03/30/648642f15f5e84778088e788159723ca97fe1e2a1ab2717ea7159da3f825/deepagents-0.3.5.tar.gz", hash = "sha256:9310e7b872244160555f1f2e914465b2b8682bcf5cb7c5d5f21f0b8e9fc127b2", size = 63104, upload-time = "2026-01-09T17:36:17.563Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/f7/9a/f4c3f610bc11e15e87537b5b657ad7050a613849e955d4de03695a4eb798/deepagents-0.2.8.tar.gz", hash = "sha256:5fbf7f0db06b923409b79a6598784e0e9925958efabd4b702eed9238b459ae09", size = 49217, upload-time = "2025-11-24T04:06:16.493Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/26/b1/670fd57c592de7c084438b52b319f7d38feab78fa6bea76f6a05fc6588ec/deepagents-0.3.5-py3-none-any.whl", hash = "sha256:9a2a08aa7523531a9f1a80d3f40f2f30d9970ea8657d4425efab1d5cf66addff", size = 68016, upload-time = "2026-01-09T17:36:16.351Z" },
+    { url = "https://files.pythonhosted.org/packages/a7/a7/a3993b58c013dae776f5880b4d83eca8d2804ea2a71793d2b96d22ca94a1/deepagents-0.2.8-py3-none-any.whl", hash = "sha256:d4c3d0df074be5e10f3a17005e68db3df18b3d51f48aca3e299d87c254fda797", size = 51973, upload-time = "2025-11-24T04:06:15.632Z" },
+]
+
+[[package]]
+name = "deepagents-cli"
+version = "0.0.12"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "daytona" },
+    { name = "deepagents" },
+    { name = "langchain" },
+    { name = "langchain-openai" },
+    { name = "markdownify" },
+    { name = "modal" },
+    { name = "pillow" },
+    { name = "prompt-toolkit" },
+    { name = "python-dotenv" },
+    { name = "pyyaml" },
+    { name = "requests" },
+    { name = "rich" },
+    { name = "runloop-api-client" },
+    { name = "tavily-python" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/28/36/36de7dbf6686e767571374c1518a527bd32545f24cccfdd7ae69258ff5b9/deepagents_cli-0.0.12.tar.gz", hash = "sha256:17597fe430915621e54e7164243999f2eca971c0adcff3470a4e3cf9fe080f31", size = 75420, upload-time = "2025-12-22T14:41:47.167Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/61/49/972082a334a3b67d2dbf8b57228c64adfb61084251be5fb6f5d221d26992/deepagents_cli-0.0.12-py3-none-any.whl", hash = "sha256:7a94065749bbec3134378d985747a249cd462d55ca37ad9e7a4f5da65eb0b3ef", size = 81108, upload-time = "2025-12-22T14:41:45.847Z" },
 ]
 
 [[package]]
@@ -730,15 +754,6 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/aa/75/06801d5beeb398ed3903167af9376bb81c4ac41c44a53d45193065ebb1a8/environs-14.5.0.tar.gz", hash = "sha256:f7b8f6fcf3301bc674bc9c03e39b5986d116126ffb96764efd34c339ed9464ee", size = 35426, upload-time = "2025-11-02T21:30:36.78Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/d3/f3/6961beb9a1e77d01dee1dd48f00fb3064429c8abcfa26aa863eb7cb2b6dd/environs-14.5.0-py3-none-any.whl", hash = "sha256:1abd3e3a5721fb09797438d6c902bc2f35d4580dfaffe68b8ee588b67b504e13", size = 17202, upload-time = "2025-11-02T21:30:35.186Z" },
-]
-
-[[package]]
-name = "filetype"
-version = "1.2.0"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/bb/29/745f7d30d47fe0f251d3ad3dc2978a23141917661998763bebb6da007eb1/filetype-1.2.0.tar.gz", hash = "sha256:66b56cd6474bf41d8c54660347d37afcc3f7d1970648de365c102ef77548aadb", size = 998020, upload-time = "2022-11-02T17:34:04.141Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/18/79/1b8fa1bb3568781e84c9200f951c735f3f157429f44be0495da55894d620/filetype-1.2.0-py2.py3-none-any.whl", hash = "sha256:7ce71b6880181241cf7ac8697a2f1eb6a8bd9b429f7ad6d27b8db9ba5f1c2d25", size = 19970, upload-time = "2022-11-02T17:34:01.425Z" },
 ]
 
 [[package]]
@@ -844,45 +859,6 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/89/76/c615883b7b521ead2944bb3480398cbb07e12b7b4e4d073d3752eb721558/frozenlist-1.8.0-cp314-cp314t-win_amd64.whl", hash = "sha256:06be8f67f39c8b1dc671f5d83aaefd3358ae5cdcf8314552c57e7ed3e6475bdd", size = 49451, upload-time = "2025-10-06T05:37:53.425Z" },
     { url = "https://files.pythonhosted.org/packages/e0/a3/5982da14e113d07b325230f95060e2169f5311b1017ea8af2a29b374c289/frozenlist-1.8.0-cp314-cp314t-win_arm64.whl", hash = "sha256:102e6314ca4da683dca92e3b1355490fed5f313b768500084fbe6371fddfdb79", size = 42507, upload-time = "2025-10-06T05:37:54.513Z" },
     { url = "https://files.pythonhosted.org/packages/9a/9a/e35b4a917281c0b8419d4207f4334c8e8c5dbf4f3f5f9ada73958d937dcc/frozenlist-1.8.0-py3-none-any.whl", hash = "sha256:0c18a16eab41e82c295618a77502e17b195883241c563b00f0aa5106fc4eaa0d", size = 13409, upload-time = "2025-10-06T05:38:16.721Z" },
-]
-
-[[package]]
-name = "google-auth"
-version = "2.47.0"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "pyasn1-modules" },
-    { name = "rsa" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/60/3c/ec64b9a275ca22fa1cd3b6e77fefcf837b0732c890aa32d2bd21313d9b33/google_auth-2.47.0.tar.gz", hash = "sha256:833229070a9dfee1a353ae9877dcd2dec069a8281a4e72e72f77d4a70ff945da", size = 323719, upload-time = "2026-01-06T21:55:31.045Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/db/18/79e9008530b79527e0d5f79e7eef08d3b179b7f851cfd3a2f27822fbdfa9/google_auth-2.47.0-py3-none-any.whl", hash = "sha256:c516d68336bfde7cf0da26aab674a36fedcf04b37ac4edd59c597178760c3498", size = 234867, upload-time = "2026-01-06T21:55:28.6Z" },
-]
-
-[package.optional-dependencies]
-requests = [
-    { name = "requests" },
-]
-
-[[package]]
-name = "google-genai"
-version = "1.57.0"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "anyio" },
-    { name = "distro" },
-    { name = "google-auth", extra = ["requests"] },
-    { name = "httpx" },
-    { name = "pydantic" },
-    { name = "requests" },
-    { name = "sniffio" },
-    { name = "tenacity" },
-    { name = "typing-extensions" },
-    { name = "websockets" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/2b/b4/8251c2d2576224a4b51a8ab6159820f9200b8da28ff555c78ee15607096e/google_genai-1.57.0.tar.gz", hash = "sha256:0ff9c36b8d68abfbdbd13b703ece926de5f3e67955666b36315ecf669b94a826", size = 485648, upload-time = "2026-01-07T20:38:20.271Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/d6/02/858bdae08e2184b6afe0b18bc3113318522c9cf326a5a1698055edd31f88/google_genai-1.57.0-py3-none-any.whl", hash = "sha256:d63c7a89a1f549c4d14032f41a0cdb4b6fe3f565e2eee6b5e0907a0aeceabefd", size = 713323, upload-time = "2026-01-07T20:38:18.051Z" },
 ]
 
 [[package]]
@@ -1222,21 +1198,6 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/a2/0e/664d8d81b3493e09cbab72448d2f9d693d1fa5aa2bcc488602203a9b6da0/langchain_core-1.2.7.tar.gz", hash = "sha256:e1460639f96c352b4a41c375f25aeb8d16ffc1769499fb1c20503aad59305ced", size = 837039, upload-time = "2026-01-09T17:44:25.505Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/6e/6f/34a9fba14d191a67f7e2ee3dbce3e9b86d2fa7310e2c7f2c713583481bd2/langchain_core-1.2.7-py3-none-any.whl", hash = "sha256:452f4fef7a3d883357b22600788d37e3d8854ef29da345b7ac7099f33c31828b", size = 490232, upload-time = "2026-01-09T17:44:24.236Z" },
-]
-
-[[package]]
-name = "langchain-google-genai"
-version = "4.1.3"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "filetype" },
-    { name = "google-genai" },
-    { name = "langchain-core" },
-    { name = "pydantic" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/ba/85/078d5aba488a82a53b8372ac1037dee4f64b020bac69e6a07e37a5059059/langchain_google_genai-4.1.3.tar.gz", hash = "sha256:28966c8fe58c9a401fdc37aeeeb0eb51744210803838ce050f022fc53d2f994e", size = 277024, upload-time = "2026-01-05T23:29:34.362Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/c9/aa/ca61dc2d202a23d7605a5c0ea24bd86a39a5c23c932a166b87c7797747c5/langchain_google_genai-4.1.3-py3-none-any.whl", hash = "sha256:5d710e2dcf449d49704bdbcd31729be90b386fa008395f9552a5c090241de1a5", size = 66262, upload-time = "2026-01-05T23:29:32.924Z" },
 ]
 
 [[package]]
@@ -2164,27 +2125,6 @@ wheels = [
 ]
 
 [[package]]
-name = "pyasn1"
-version = "0.6.1"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/ba/e9/01f1a64245b89f039897cb0130016d79f77d52669aae6ee7b159a6c4c018/pyasn1-0.6.1.tar.gz", hash = "sha256:6f580d2bdd84365380830acf45550f2511469f673cb4a5ae3857a3170128b034", size = 145322, upload-time = "2024-09-10T22:41:42.55Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/c8/f1/d6a797abb14f6283c0ddff96bbdd46937f64122b8c925cab503dd37f8214/pyasn1-0.6.1-py3-none-any.whl", hash = "sha256:0d632f46f2ba09143da3a8afe9e33fb6f92fa2320ab7e886e2d0f7672af84629", size = 83135, upload-time = "2024-09-11T16:00:36.122Z" },
-]
-
-[[package]]
-name = "pyasn1-modules"
-version = "0.4.2"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "pyasn1" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/e9/e6/78ebbb10a8c8e4b61a59249394a4a594c1a7af95593dc933a349c8d00964/pyasn1_modules-0.4.2.tar.gz", hash = "sha256:677091de870a80aae844b1ca6134f54652fa2c8c5a52aa396440ac3106e941e6", size = 307892, upload-time = "2025-03-28T02:41:22.17Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/47/8d/d529b5d697919ba8c11ad626e835d4039be708a35b0d22de83a269a6682c/pyasn1_modules-0.4.2-py3-none-any.whl", hash = "sha256:29253a9207ce32b64c3ac6600edc75368f98473906e8fd1043bd6b5b1de2c14a", size = 181259, upload-time = "2025-03-28T02:41:19.028Z" },
-]
-
-[[package]]
 name = "pycparser"
 version = "2.23"
 source = { registry = "https://pypi.org/simple" }
@@ -2657,18 +2597,6 @@ wheels = [
 ]
 
 [[package]]
-name = "rsa"
-version = "4.9.1"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "pyasn1" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/da/8a/22b7beea3ee0d44b1916c0c1cb0ee3af23b700b6da9f04991899d0c555d4/rsa-4.9.1.tar.gz", hash = "sha256:e7bdbfdb5497da4c07dfd35530e1a902659db6ff241e39d9953cad06ebd0ae75", size = 29034, upload-time = "2025-04-16T09:51:18.218Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/64/8d/0133e4eb4beed9e425d9a98ed6e081a55d195481b7632472be1af08d2f6b/rsa-4.9.1-py3-none-any.whl", hash = "sha256:68635866661c6836b8d39430f97a996acbd61bfa49406748ea243539fe239762", size = 34696, upload-time = "2025-04-16T09:51:17.142Z" },
-]
-
-[[package]]
 name = "ruff"
 version = "0.14.11"
 source = { registry = "https://pypi.org/simple" }
@@ -2779,21 +2707,8 @@ version = "0.1.0"
 source = { editable = "." }
 dependencies = [
     { name = "aiosqlite" },
-    { name = "daytona" },
-    { name = "deepagents" },
-    { name = "langchain" },
-    { name = "langchain-openai" },
+    { name = "deepagents-cli" },
     { name = "langgraph-checkpoint-sqlite" },
-    { name = "markdownify" },
-    { name = "modal" },
-    { name = "pillow" },
-    { name = "prompt-toolkit" },
-    { name = "python-dotenv" },
-    { name = "pyyaml" },
-    { name = "requests" },
-    { name = "rich" },
-    { name = "runloop-api-client" },
-    { name = "tavily-python" },
     { name = "textual" },
     { name = "textual-autocomplete" },
 ]
@@ -2827,21 +2742,8 @@ test = [
 [package.metadata]
 requires-dist = [
     { name = "aiosqlite", specifier = ">=0.19.0" },
-    { name = "daytona", specifier = ">=0.113.0" },
-    { name = "deepagents", specifier = ">=0.2.8,<1.0.0" },
-    { name = "langchain", specifier = ">=1.2.3,<2.0.0" },
-    { name = "langchain-openai", specifier = ">=1.1.7,<2.0.0" },
+    { name = "deepagents-cli", specifier = ">=0.0.12" },
     { name = "langgraph-checkpoint-sqlite", specifier = ">=2.0.0,<3.0.0" },
-    { name = "markdownify", specifier = ">=0.13.0" },
-    { name = "modal", specifier = ">=0.65.0" },
-    { name = "pillow", specifier = ">=10.0.0" },
-    { name = "prompt-toolkit", specifier = ">=3.0.52" },
-    { name = "python-dotenv" },
-    { name = "pyyaml", specifier = ">=6.0" },
-    { name = "requests" },
-    { name = "rich", specifier = ">=13.0.0" },
-    { name = "runloop-api-client", specifier = ">=0.69.0" },
-    { name = "tavily-python" },
     { name = "textual", specifier = ">=1.0.0" },
     { name = "textual-autocomplete", specifier = ">=3.0.0" },
 ]

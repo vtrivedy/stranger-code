@@ -43,24 +43,17 @@ export GOOGLE_API_KEY=your_key_here
 export TAVILY_API_KEY=your_key_here
 ```
 
-### 2. Install
+### 2. Install & Run
 
 ```bash
-# Clone
 git clone https://github.com/vtrivedy/stranger-code.git
 cd stranger-code
 
 # Install with uv (recommended)
-uv pip install -e .
+uv sync
 
-# Or with pip
-pip install -e .
-```
-
-### 3. Run
-
-```bash
-stranger-code
+# Run
+uv run stranger-code
 ```
 
 That's it. The Gate is open.

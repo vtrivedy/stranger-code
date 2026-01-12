@@ -391,28 +391,20 @@ def create_cli_agent(
 
     # Add memory middleware
     if enable_memory:
-        memory_sources = [str(settings.get_user_agent_md_path(assistant_id))]
-        project_agent_md = settings.get_project_agent_md_path()
-        if project_agent_md:
-            memory_sources.append(str(project_agent_md))
-
         agent_middleware.append(
             MemoryMiddleware(
-                backend=FilesystemBackend(),
-                sources=memory_sources,
+                settings=settings,
+                assistant_id=assistant_id,
             )
         )
 
     # Add skills middleware
     if enable_skills:
-        sources = [str(skills_dir)]
-        if project_skills_dir:
-            sources.append(str(project_skills_dir))
-
         agent_middleware.append(
             SkillsMiddleware(
-                backend=FilesystemBackend(),
-                sources=sources,
+                skills_dir=skills_dir,
+                assistant_id=assistant_id,
+                project_skills_dir=project_skills_dir,
             )
         )
 
