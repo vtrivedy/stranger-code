@@ -13,6 +13,10 @@ from langchain_core.tools.base import ToolException
 
 
 class ShellMiddleware(AgentMiddleware[AgentState, Any]):
+    """New multi-line comment
+    for RabbitCode testing
+    """
+
     """Give basic shell access to agents via the shell.
 
     This shell will execute on the local machine and has NO safeguards except
